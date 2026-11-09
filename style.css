@@ -1,0 +1,286 @@
+
+/* 全部基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #f2faff;
+    color: #536b80;
+}
+
+/* 導覽列 */
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #dcecf5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #83c9ed;
+}
+
+nav a {
+    text-decoration: none;
+    color: #718da5;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #53b6e9;
+}
+
+/* 首頁主視覺 */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #dff4ff, #ffffff);
+}
+
+.hero-text {
+    max-width: 450px;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    color: #70bce5;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.hero img {
+    width: 320px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+/* 通用區塊 */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    color: #70bce5;
+    margin-bottom: 35px;
+}
+
+/* 角色基本資料 */
+.info {
+    background-color: #ffffff;
+}
+
+.info-box {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    background-color: #f0f9ff;
+    border-radius: 25px;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.info-box span {
+    color: #55aee0;
+    font-weight: bold;
+}
+
+/* 個性介紹 */
+.personality {
+    background-color: #eaf7ff;
+}
+
+/* 卡片排列 */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 220px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px #d6eaf5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #c5e4f5;
+}
+
+.card h3 {
+    color: #70bce5;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+
+/* 好朋友角色介紹 */
+.friends {
+    background-color: #ffffff;
+}
+
+.friends-intro {
+    margin-top: -15px;
+    margin-bottom: 35px;
+    color: #819bb0;
+    font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.friend-card {
+    width: 230px;
+    padding: 15px;
+    background-color: #f1faff;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px #d6eaf5;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.friend-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #c5e4f5;
+}
+
+/* 角色圖片 */
+.friend-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 18px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.friend-card img:hover {
+    transform: scale(1.05);
+}
+
+/* 角色英文名稱 */
+.friend-card h3 {
+    color: #70bce5;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+/* 角色中文名稱 */
+.character-name {
+    color: #91c9e8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 角色介紹文字 */
+.friend-card p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* 頁尾 */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ccecff;
+    color: #628ba7;
+    font-size: 15px;
+}
+
+/* 手機版排版 */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 8%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        width: 250px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
